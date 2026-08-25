@@ -1,0 +1,20 @@
+{
+  "name": "com.gamewarriors.bazaar",
+  "version": "0.0.1",
+  "displayName": "Bazaar IAP Poolakey",
+  "description": "This package provide purchase api for bazaar android market",
+  "unity": "2020.3",
+  "unityRelease": "0b5",
+  "dependencies": {
+  },
+  "keywords": [
+    "purchase",
+    "bazaar",
+    "poolakey"
+  ],
+  "author": {
+    "name": "Game Warriors",
+    "email": "mahdifada.eddini@outlook.com",
+    "url": "https://www.gamewarriorsstudio.com"
+  }
+}
