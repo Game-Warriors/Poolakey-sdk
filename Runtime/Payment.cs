@@ -43,8 +43,9 @@ namespace Bazaar.Poolakey
             var result = Result<List<SKUDetails>>.GetDefault();
             if (isAndroid)
             {
+                var joinedProductIds = productIds == null ? string.Empty : string.Join(",", productIds);
                 var callback = new SKUDetailsCallbackProxy();
-                bridge.Call("getSkuDetails", type.ToString(), productIds, callback);
+                bridge.Call("getSkuDetails", type.ToString(), joinedProductIds, callback);
                 result = await callback.taskCompletionSource.Task;
 
                 if (result.status == Status.Success)
